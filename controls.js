@@ -10,12 +10,54 @@ function main(){
   video1.width = 500;
   video1.height = 250;
 
+  video1.onmouseover = () => {
+    console.log('Audio ON!')
+    video1.volume = 0.5;
+    video1.style.backgroundColor = "lightgray"
+  }
+
+  video1.onmouseout = () => {
+    console.log('Audio OFF')
+    video1.volume = 0.0;
+    video1.style.backgroundColor = ""
+  }
+
+  play1 = document.getElementById('play1');
+
+  play1.onclick = () => {
+    realizador = document.getElementById('realizador');
+
+    console.log('Video 1')
+    realizador.src = 'video1.mp4'
+  }
+
   //-- VIDEO 2:
   video2 = document.getElementById('video2');
 
   //-- Tamaño del video:
   video2.width = 500;
   video2.height = 250;
+
+  video2.onmouseover = () => {
+    console.log('Audio ON!')
+    video2.volume = 0.5;
+    video2.style.backgroundColor = "lightgray"
+  }
+
+  video2.onmouseout = () => {
+    console.log('Audio OFF')
+    video2.volume = 0.0;
+    video2.style.backgroundColor = ""
+  }
+
+  play2 = document.getElementById('play2');
+
+  play2.onclick = () => {
+    realizador = document.getElementById('realizador');
+
+    console.log('Video 2')
+    realizador.src = 'video2.mp4'
+  }
 
   //-- VIDEO 3:
   video3 = document.getElementById('video3');
@@ -24,19 +66,24 @@ function main(){
   video3.width = 500;
   video3.height = 250;
 
-
-  /*
-  audio = document.getElementById('audio');
-
-  //-- Cuando el raton pase por encima del audio, que suene:
-  audio.onmouseover = () => {
+  video3.onmouseover = () => {
     console.log('Audio ON!')
-    audio.style.backgroundColor = "lightblue"
+    video3.volume = 0.5;
+    video3.style.backgroundColor = "lightgray"
   }
 
-  audio.onmouseout = () => {
+  video3.onmouseout = () => {
     console.log('Audio OFF')
-    audio.style.backgroundColor = ""
-  } */
+    video3.volume = 0.0;
+    video3.style.backgroundColor = ""
+  }
 
+  play3 = document.getElementById('play3');
+
+  play3.onclick = () => {
+    realizador = document.getElementById('realizador');
+
+    console.log('Video 3')
+    realizador.src = 'video3.mp4'
+  }
 }
