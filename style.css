@@ -18,6 +18,7 @@ video {
 
 #realizador {
   text-align: center;
+  float:center;
   width: 60%;
   margin: auto;
 }

@@ -5,6 +5,7 @@ function main(){
 
   //-- VIDEO 1:
   video1 = document.getElementById('video1');
+  video1.volume = 0.0;
 
   //-- Tamaño del video:
   video1.width = 500;
@@ -33,6 +34,7 @@ function main(){
 
   //-- VIDEO 2:
   video2 = document.getElementById('video2');
+  video2.volume = 0.0;
 
   //-- Tamaño del video:
   video2.width = 500;
@@ -57,10 +59,12 @@ function main(){
 
     console.log('Video 2')
     realizador.src = 'video2.mp4'
+    realizador.volume = 0.5;
   }
 
   //-- VIDEO 3:
   video3 = document.getElementById('video3');
+  video3.volume = 0.0;
 
   //-- Tamaño del video:
   video3.width = 500;
@@ -85,5 +89,6 @@ function main(){
 
     console.log('Video 3')
     realizador.src = 'video3.mp4'
+    realizador.volume = 0.5;
   }
 }
