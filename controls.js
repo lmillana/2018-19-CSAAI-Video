@@ -3,13 +3,19 @@
 function main(){
   console.log("Probando...")
 
+  //-- REALIZADOR:
+  realizador = document.getElementById('realizador');
+
+  realizador.width = 250;
+  realizador.height = 500;
+
   //-- VIDEO 1:
   video1 = document.getElementById('video1');
   video1.volume = 0.0;
 
   //-- Tamaño del video:
-  video1.width = 500;
-  video1.height = 250;
+  video1.width = 250;
+  video1.height = 500;
 
   video1.onmouseover = () => {
     console.log('Audio ON!')
@@ -26,10 +32,10 @@ function main(){
   play1 = document.getElementById('play1');
 
   play1.onclick = () => {
-    realizador = document.getElementById('realizador');
 
     console.log('Video 1')
-    realizador.src = 'video1.mp4'
+    realizador.src = 'video1.mov'
+    realizador.currentTime = video1.currentTime
   }
 
   //-- VIDEO 2:
@@ -37,8 +43,8 @@ function main(){
   video2.volume = 0.0;
 
   //-- Tamaño del video:
-  video2.width = 500;
-  video2.height = 250;
+  video2.width = 250;
+  video2.height = 500;
 
   video2.onmouseover = () => {
     console.log('Audio ON!')
@@ -55,11 +61,9 @@ function main(){
   play2 = document.getElementById('play2');
 
   play2.onclick = () => {
-    realizador = document.getElementById('realizador');
 
     console.log('Video 2')
     realizador.src = 'video2.mp4'
-    realizador.volume = 0.5;
   }
 
   //-- VIDEO 3:
@@ -67,8 +71,8 @@ function main(){
   video3.volume = 0.0;
 
   //-- Tamaño del video:
-  video3.width = 500;
-  video3.height = 250;
+  video3.width = 250;
+  video3.height = 500;
 
   video3.onmouseover = () => {
     console.log('Audio ON!')
@@ -85,10 +89,9 @@ function main(){
   play3 = document.getElementById('play3');
 
   play3.onclick = () => {
-    realizador = document.getElementById('realizador');
 
     console.log('Video 3')
-    realizador.src = 'video3.mp4'
+    realizador.src = 'video3.mov'
     realizador.volume = 0.5;
   }
 }
